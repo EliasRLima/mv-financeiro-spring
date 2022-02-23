@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>MV - Financeiro</title>
+
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/webjars/bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+    <script src=".@{/webjars/bootstrap/css/bootstrap.bundle.min.js}"></script>
+    <link th:href="@{/css/base.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron jumbotron-fluid" id = "teste">
+        <div class="container">
+            <h1 class="branco">MV's - XPTO Controle de Clientes</h1>
+            <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-dark">
+                <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item">
+                            <a id="mn_ini" class="nav-link active" href="#" onclick="atualizar('mn_ini')">Inicio<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="mn_cli" class="nav-link branco" href="#" onclick="atualizar('mn_cli')">Clientes<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="mn_end" class="nav-link branco" href="#" onclick="atualizar('mn_end')">Endereços<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="mn_con" class="nav-link branco" href="#" onclick="atualizar('mn_con')">Contas<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="branco" style="margin-bottom: 2rem; background-color: pink; width: 100%; height: 100%" id="area_principal">
+
+    </div>
+
+    <script src="js/Menu.js"></script>
+
+</div>
+</body>
+</html>
